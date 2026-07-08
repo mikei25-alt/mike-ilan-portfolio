@@ -7,7 +7,8 @@
 
 /* ---- Self-hosted fonts -----------------------------------------------------
    Jost = a free Futura revival, echoing B&G's actual Futura PT (nav/body).
-   Fraunces = warm editorial display serif for hero + section titles.        */
+   DM Serif Display = high-contrast editorial serif for display + titles —
+   clean, conventional letterforms (readable) with a proper italic.          */
 @font-face {
   font-family: 'Jost';
   font-style: normal;
@@ -16,18 +17,18 @@
   src: url('assets/fonts/jost-var.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Fraunces';
+  font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: 300 500;
+  font-weight: 400;
   font-display: swap;
-  src: url('assets/fonts/fraunces-var.woff2') format('woff2');
+  src: url('assets/fonts/dm-serif-display.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'Fraunces';
+  font-family: 'DM Serif Display';
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('assets/fonts/fraunces-italic-var.woff2') format('woff2');
+  src: url('assets/fonts/dm-serif-display-italic.woff2') format('woff2');
 }
 
 /* ---- Design tokens -------------------------------------------------------- */
@@ -54,7 +55,7 @@
   --text-mute: #948a78;
 
   /* Type */
-  --serif: 'Fraunces', 'Hoefler Text', Georgia, 'Times New Roman', serif;
+  --serif: 'DM Serif Display', 'Hoefler Text', Georgia, 'Times New Roman', serif;
   --sans:  'Jost', 'Century Gothic', 'Futura', 'Trebuchet MS', system-ui, sans-serif;
 
   /* Rhythm */
@@ -133,7 +134,7 @@ ul { list-style: none; padding: 0; }
 .eyebrow--center { justify-content: center; }
 .eyebrow--center::before { display: none; }
 
-h1, h2, h3 { font-family: var(--serif); font-weight: 300; line-height: 1.04; letter-spacing: -0.015em; }
+h1, h2, h3 { font-family: var(--serif); font-weight: 400; line-height: 1.06; letter-spacing: -0.005em; }
 .display { font-family: var(--serif); }
 em { font-style: italic; font-family: var(--serif); }
 
@@ -315,12 +316,12 @@ em { font-style: italic; font-family: var(--serif); }
 }
 .hero__eyebrow b { color: var(--brass); font-weight: 600; }
 .hero__title {
-  font-size: clamp(2.5rem, 1.2rem + 5.6vw, 5.6rem);
-  line-height: 1.02;
-  letter-spacing: -0.02em;
+  font-size: clamp(2.2rem, 1rem + 4.5vw, 4.6rem);
+  line-height: 1.06;
+  letter-spacing: -0.01em;
   color: var(--text);
   text-wrap: balance;
-  max-width: 17ch;
+  max-width: 18ch;
 }
 .hero__title em { color: var(--honey); font-weight: 400; }
 .hero__subhead {
@@ -358,7 +359,7 @@ em { font-style: italic; font-family: var(--serif); }
 .intro__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; }
 .intro__lead {
   font-family: var(--serif);
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(1.5rem, 1rem + 2.1vw, 2.55rem);
   line-height: 1.28;
   letter-spacing: -0.01em;
@@ -617,7 +618,7 @@ em { font-style: italic; font-family: var(--serif); }
 .contact__title em { color: var(--honey); }
 .contact__note { color: var(--text-soft); font-size: 1.14rem; max-width: 52ch; line-height: 1.65; }
 .contact__email {
-  font-family: var(--serif); font-weight: 300;
+  font-family: var(--serif); font-weight: 400;
   font-size: clamp(1.5rem, 1rem + 2.4vw, 2.5rem);
   color: var(--brass-bright);
   position: relative; padding-bottom: 0.1em;

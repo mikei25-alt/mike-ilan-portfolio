@@ -75,8 +75,8 @@ The B&G product images and both Instagram stills were pulled from each page's
 ### Textures & fonts
 - `assets/textures/` — procedurally generated wood-grain (regenerate with
   `scratchpad/gen_textures.py` if you ever want a different figure).
-- `assets/fonts/` — self-hosted **Jost** (Futura-alike sans) and **Fraunces**
-  (display serif), as variable `.woff2`.
+- `assets/fonts/` — self-hosted **Jost** (Futura-alike sans, variable) and
+  **DM Serif Display** (high-contrast editorial serif for titles), as `.woff2`.
 
 ### Copy
 All copy lives directly in `index.html`, grouped by section with comments.
