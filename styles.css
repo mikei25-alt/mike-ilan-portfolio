@@ -429,7 +429,6 @@ em { font-style: italic; font-family: var(--serif); }
   background:
     radial-gradient(120% 100% at 85% 0%, rgba(138,78,42,0.16), transparent 60%),
     linear-gradient(160deg, var(--panel), var(--espresso));
-  overflow: hidden;
 }
 .flagship__flag {
   position: absolute; top: 0; left: clamp(1.4rem, 3vw, 2.4rem);
