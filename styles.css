@@ -422,7 +422,7 @@ em { font-style: italic; font-family: var(--serif); }
 /* ---- Flagship feature ---- */
 .flagship {
   position: relative;
-  display: grid; gap: clamp(2rem, 4vw, 3.5rem);
+  display: grid; column-gap: clamp(2rem, 4vw, 3.5rem); row-gap: clamp(1.3rem, 3vw, 1.8rem);
   padding: clamp(1.4rem, 3vw, 2.4rem);
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
@@ -431,8 +431,8 @@ em { font-style: italic; font-family: var(--serif); }
     linear-gradient(160deg, var(--panel), var(--espresso));
 }
 .flagship__flag {
-  position: absolute; top: 0; left: clamp(1.4rem, 3vw, 2.4rem);
-  transform: translateY(-50%);
+  grid-column: 1 / -1;
+  justify-self: start;
   background: linear-gradient(135deg, var(--brass-bright), var(--brass));
   color: var(--ink);
   font-size: 0.66rem; letter-spacing: 0.24em; text-transform: uppercase; font-weight: 600;
@@ -444,7 +444,7 @@ em { font-style: italic; font-family: var(--serif); }
   border-radius: var(--radius);
   overflow: hidden;
   background:
-    radial-gradient(78% 88% at 50% 42%, rgba(12,9,7,0.30), rgba(9,6,4,0.88) 100%),
+    radial-gradient(80% 90% at 50% 42%, rgba(12,9,7,0.42), rgba(9,6,4,0.90) 100%),
     url('assets/textures/woodgrain-panel.jpg') center/cover;
   min-height: 340px;
   display: grid;
@@ -458,18 +458,6 @@ em { font-style: italic; font-family: var(--serif); }
   transition: transform 0.6s var(--ease);
 }
 .flagship:hover .flagship__guitar { transform: translateY(-6px) rotate(-0.6deg); }
-/* Macro-reel inset (the Instagram hero ad — Mike's macro-lens film) */
-.flagship__reel {
-  position: absolute; right: 1rem; bottom: 1rem; z-index: 4;
-  width: clamp(96px, 12vw, 132px);
-  border-radius: 6px; overflow: hidden;
-  border: 1px solid rgba(236,223,196,0.25);
-  box-shadow: 0 16px 34px -14px rgba(0,0,0,0.8);
-  transition: transform 0.4s var(--ease);
-}
-.flagship__reel img { aspect-ratio: 9/16; object-fit: cover; width: 100%; }
-.flagship__reel .play-badge { left: 0.4rem; bottom: 0.4rem; padding: 0.3em 0.55em; font-size: 0.58rem; }
-.flagship__reel:hover { transform: scale(1.03); }
 
 .flagship__body { display: flex; flex-direction: column; align-items: flex-start; gap: 1.35rem; }
 .flagship__title { font-size: clamp(1.9rem, 1.2rem + 2.4vw, 3rem); color: var(--text); }
@@ -510,8 +498,8 @@ em { font-style: italic; font-family: var(--serif); }
 .band__media {
   position: relative; border-radius: var(--radius); overflow: hidden;
   background:
-    radial-gradient(78% 86% at 50% 45%, rgba(12,9,7,0.32), rgba(9,6,4,0.90) 100%),
-    radial-gradient(85% 75% at 50% 22%, rgba(43,85,96,0.30), transparent 62%),
+    radial-gradient(80% 88% at 50% 45%, rgba(12,9,7,0.44), rgba(9,6,4,0.92) 100%),
+    radial-gradient(85% 75% at 50% 22%, rgba(43,85,96,0.26), transparent 62%),
     url('assets/textures/woodgrain-panel.jpg') center/cover;
   display: grid; place-items: center; padding: 1.5rem; min-height: 300px;
 }
@@ -670,7 +658,7 @@ em { font-style: italic; font-family: var(--serif); }
 .metrics {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px;
   margin-top: clamp(1.8rem, 3.5vw, 2.6rem);
-  margin-bottom: clamp(2.4rem, 4.5vw, 3.6rem); /* clearance for the flagship's floating pill */
+  margin-bottom: clamp(1.8rem, 3.5vw, 2.6rem);
   background: var(--line); border: 1px solid var(--line);
   border-radius: var(--radius-lg); overflow: hidden;
 }
