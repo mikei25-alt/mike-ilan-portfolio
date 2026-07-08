@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mike Ilan monogram">
+  <defs>
+    <linearGradient id="b" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e0b061"/>
+      <stop offset="1" stop-color="#b57a34"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#14100c"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#c69245" stroke-opacity="0.35"/>
+  <!-- MI monogram in a clean geometric cut -->
+  <path d="M14 45V19h4.6l7.4 15 7.4-15H42v26h-4.7V29.6l-6.6 13h-3.2l-6.6-13V45z" fill="url(#b)"/>
+  <rect x="46" y="19" width="4.6" height="26" rx="1" fill="url(#b)"/>
+</svg>

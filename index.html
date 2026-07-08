@@ -1,0 +1,409 @@
+<!--
+  Mike Ilan — Marketing Creative · Portfolio (single page)
+  Built to echo the B&G Guitars house style: warm near-black, figured-wood accents,
+  editorial serif + geometric sans. Static HTML/CSS/JS, no build step.
+
+  TODO before deploy (see README.md):
+    · Confirm name spelling: "Mike Ilan"
+    · Confirm public contact email (currently mikeilan207@gmail.com)
+    · Optional: add an Instagram profile URL (search "TODO" below) and a portrait
+  DONE: LinkedIn wired · résumé at assets/mike-ilan-resume.pdf
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mike Ilan — Marketing Creative</title>
+<meta name="description" content="Mike Ilan — a Tel Aviv product-marketing creative with 3+ years across B2B and B2C. Go-to-market, lifecycle, CRO, content, and creator partnerships, owned end to end — with a flagship B&G Guitars case study that delivered a 250% ROI.">
+<meta name="author" content="Mike Ilan">
+<meta name="theme-color" content="#0c0907">
+
+<!-- Open Graph / social preview (for recruiters sharing the link) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mikei25-alt.github.io/mike-ilan-portfolio/">
+<meta property="og:title" content="Mike Ilan — Marketing Creative">
+<meta property="og:description" content="Product-marketing creative — go-to-market, lifecycle, CRO, content, and creator partnerships across B2B and B2C. A flagship case study that delivered 250% ROI.">
+<!-- Absolute URL so social scrapers resolve the preview image. Update if you move to a custom domain. -->
+<meta property="og:image" content="https://mikei25-alt.github.io/mike-ilan-portfolio/assets/thumbs/stepsister-detail.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jost-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+
+<!-- Structured data: helps search + recruiter tooling understand the page -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mike Ilan",
+  "jobTitle": "Product Marketing Manager & Marketing Creative",
+  "address": { "@type": "PostalAddress", "addressLocality": "Tel Aviv", "addressCountry": "IL" },
+  "email": "mailto:mikeilan207@gmail.com",
+  "sameAs": ["https://www.linkedin.com/in/mikeilan"],
+  "alumniOf": "Northwestern University (Social Media Marketing, via Coursera)",
+  "description": "Product-marketing creative with 3+ years across B2B and B2C — go-to-market, lifecycle, CRO, content, creative direction, and creator partnerships.",
+  "knowsAbout": ["Product Marketing","Go-To-Market Strategy","Lifecycle Marketing","Conversion Rate Optimization","Copywriting","Creative Direction","Video Production","Influencer Partnerships","GA4","HubSpot","Meta Business Suite","Mailchimp"]
+}
+</script>
+
+<a class="skip" href="#work">Skip to work</a>
+
+<!-- ============================== NAV ============================== -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Mike Ilan — home">
+    <img class="brand__mark" src="assets/favicon.svg" alt="" width="30" height="30" aria-hidden="true">
+    <span class="brand__name"><b>Mike Ilan</b> <span>· Marketing Creative</span></span>
+  </a>
+
+  <nav class="nav__links" id="navLinks" aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#capabilities">Capabilities</a>
+    <a href="#about">About</a>
+    <a href="#contact" class="btn btn--ghost nav__cta">Get in touch</a>
+  </nav>
+
+  <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ============================== HERO ============================== -->
+  <!-- Hero one-liner per brief. Alt kept here as requested:
+       "I turn premium offers into stories that sell — strategy, content, and campaigns, owned end to end." -->
+  <section class="hero" aria-label="Introduction">
+    <div class="hero__layer hero__wood" aria-hidden="true"></div>
+    <div class="hero__layer hero__glow" aria-hidden="true"></div>
+    <div class="hero__layer hero__grain" aria-hidden="true"></div>
+    <div class="hero__layer hero__vignette" aria-hidden="true"></div>
+
+    <div class="container hero__inner">
+      <p class="hero__eyebrow"><b>Mike Ilan</b> &nbsp;·&nbsp; Marketing Creative &nbsp;·&nbsp; Product Marketing</p>
+      <h1 class="hero__title">
+        A marketing creative who invokes <em>emotion</em> &amp; <em>brand loyalty</em> through storytelling &amp; precise positioning.
+      </h1>
+      <p class="hero__subhead">
+        Product-marketing creative with 3+ years across B2B and B2C — go-to-market, lifecycle, and multi-channel campaigns that connect strategy, storytelling, and execution to move traffic, engagement, and revenue.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="#work">
+          View selected work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        <span class="status"><span class="dot" aria-hidden="true"></span>Open to full-time roles</span>
+      </div>
+    </div>
+
+    <a class="hero__scroll" href="#intro" aria-label="Scroll to read more">
+      <span>Scroll</span>
+      <span class="line" aria-hidden="true"></span>
+    </a>
+  </section>
+
+  <!-- ============================== INTRO / POSITIONING ============================== -->
+  <section class="intro" id="intro" aria-labelledby="intro-title">
+    <div class="container">
+      <div class="intro__grid">
+        <div class="reveal">
+          <p class="eyebrow" style="margin-bottom:1.4rem">Positioning</p>
+          <p class="intro__lead" id="intro-title">
+            I lead multi-channel marketing that connects <em>strategy, storytelling,</em> and <em>execution.</em>
+          </p>
+        </div>
+        <div class="intro__body reveal" data-delay="1">
+          <p>
+            Over 3+ years across B2B and B2C, I've owned go-to-market plans, lifecycle flows, and performance campaigns with measurable results — product marketing paired with a strong creative side: content strategy, creator partnerships, and messaging that resonates with diverse audiences. <em>The category changes; the playbook travels.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== SELECTED WORK ============================== -->
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected Work · Case Study</p>
+        <h2 class="section-title" id="work-title">One premium brand, owned end to end.</h2>
+        <p class="lede">A deep dive into premium-brand marketing at B&amp;G Guitars, where a single product can run to $8,000. The category was guitars — the playbook (go-to-market, CRO, lifecycle, paid&nbsp;+&nbsp;organic, and a 20&#8209;plus creator program) ports to any considered purchase, SaaS and DTC included.</p>
+      </div>
+
+      <!-- Impact metrics — hard numbers up front for hiring managers scanning quickly -->
+      <ul class="metrics reveal" aria-label="Impact highlights">
+        <li class="metric"><b>250%</b><span>ROI on a flagship product launch</span></li>
+        <li class="metric"><b>~20%</b><span>Weekly traffic lift via CRO&nbsp;+&nbsp;SEO</span></li>
+        <li class="metric"><b>20+</b><span>Creators — micro to millions of subs</span></li>
+        <li class="metric"><b>B2B&nbsp;·&nbsp;B2C</b><span>Across tech-driven environments</span></li>
+      </ul>
+
+      <!-- ⭐ FLAGSHIP CASE STUDY -->
+      <article class="flagship reveal" aria-labelledby="flag-title">
+        <span class="flagship__flag">Flagship case study</span>
+
+        <figure class="flagship__media">
+          <img class="flagship__guitar" src="assets/thumbs/stepsister.png"
+               alt="B&amp;G ‘Step Sister’ one-of-a-kind electric guitar with a figured golden-camphor top and gold hardware"
+               width="387" height="1200" loading="lazy" decoding="async">
+          <!-- Second linked deliverable: the Instagram hero film (Mike's macro-lens concept) -->
+          <a class="flagship__reel" href="https://www.instagram.com/p/CwnWKsII4Iq/" target="_blank" rel="noopener noreferrer"
+             aria-label="Watch the Step Sister hero ad on Instagram (opens in a new tab)">
+            <img src="assets/thumbs/ig-stepsister-ad.jpg"
+                 alt="Moody macro still from the Step Sister launch film — gold bridge and wood grain with ‘One of a kind’ script"
+                 width="360" height="640" loading="lazy" decoding="async">
+            <span class="play-badge"><span class="tri"><svg viewBox="0 0 10 12" fill="currentColor" aria-hidden="true"><path d="M0 0l10 6-10 6z"/></svg></span>Hero film</span>
+          </a>
+        </figure>
+
+        <div class="flagship__body">
+          <h3 class="flagship__title" id="flag-title">
+            <span>Step Sister · Golden Camphor</span>
+            A 250% ROI launch — sold out in two weeks.
+          </h3>
+          <p class="flagship__lede">
+            A premium product launch, owned <em>end to end</em> — strategy, story, shoot, page, and spend.
+          </p>
+          <p class="flagship__desc">
+            I defined the positioning, wrote all the product copy and the page spec, then partnered with our UI/UX designer on a bespoke layout and flow. I directed the photoshoot around a macro-lens concept that made the material the hero, then shot and wrote the launch film and its social cutdowns. Paid Meta carried it alongside an organic Mailchimp push — a 250% ROI on a one-of-a-kind, $8,000 product.
+          </p>
+          <ul class="flagship__stats" aria-label="Results">
+            <li><b>250%</b> ROI</li>
+            <li><b>$8,000</b> · one of a kind</li>
+            <li>Sold <b>in two weeks</b></li>
+            <li>GTM · CRO · paid + organic</li>
+          </ul>
+          <div class="flagship__cta">
+            <a class="btn btn--solid" href="https://www.bngguitars.com/products/one-of-a-kind-step-sister-golden-camphor" target="_blank" rel="noopener noreferrer">
+              View product page
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="https://www.instagram.com/p/CwnWKsII4Iq/" target="_blank" rel="noopener noreferrer">
+              Watch the hero ad
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Secondary feature: Helena HyperShift (mirrored, cool ocean accent) -->
+      <article class="band band--mirror reveal" aria-labelledby="helena-title">
+        <figure class="band__media">
+          <img class="band__guitar" src="assets/thumbs/helena.png"
+               alt="B&amp;G ‘Helena HyperShift’ guitar with a purple-to-teal colour-shifting finish and black carbon-fibre pickguard"
+               width="387" height="1200" loading="lazy" decoding="async">
+        </figure>
+        <div class="band__body">
+          <h3 class="band__title" id="helena-title">
+            <span>Landing page · Product content</span>
+            Helena HyperShift
+          </h3>
+          <p class="band__desc">
+            Landing page and product content for a colour-changing guitar — copywriting plus page design and flow, built to make the shifting finish the centre of the story.
+          </p>
+          <a class="ext" href="https://www.bngguitars.com/products/one-of-a-kind-helena-hypershift" target="_blank" rel="noopener noreferrer" style="font-size:0.82rem">
+            View product page
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Video / social cards -->
+      <div class="work-grid">
+
+        <a class="card reveal" href="https://www.youtube.com/watch?v=NzZdg0sMYQc" target="_blank" rel="noopener noreferrer" aria-label="‘Value’ lesson video — Scorpions x Alberto Lombardi collaboration on YouTube (opens in a new tab)">
+          <div class="card__media">
+            <img src="assets/thumbs/yt-scorpions.jpg" alt="Video thumbnail: a value-first guitar lesson filmed with brand partner Alberto Lombardi" width="1280" height="720" loading="lazy" decoding="async">
+            <span class="play-badge"><span class="tri"><svg viewBox="0 0 10 12" fill="currentColor" aria-hidden="true"><path d="M0 0l10 6-10 6z"/></svg></span>YouTube</span>
+          </div>
+          <div class="card__body">
+            <span class="tag">Video · Influencer collab</span>
+            <h3 class="card__title">“Value” lesson — Scorpions × Alberto Lombardi</h3>
+            <p class="card__desc">Production concept and script for a value-first tutorial teaching viewers to play a famous Scorpions song on a B&amp;G guitar, featuring brand partner Alberto Lombardi.</p>
+            <div class="card__foot"><span class="ext">Watch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          </div>
+        </a>
+
+        <a class="card reveal" data-delay="1" href="https://www.youtube.com/watch?v=5kPJtSb1vVM" target="_blank" rel="noopener noreferrer" aria-label="In-house acoustic lesson with David Levi on YouTube (opens in a new tab)">
+          <div class="card__media">
+            <img src="assets/thumbs/yt-davidlevi.jpg" alt="Video thumbnail: an in-house acoustic guitar lesson produced with David Levi" width="1280" height="720" loading="lazy" decoding="async">
+            <span class="play-badge"><span class="tri"><svg viewBox="0 0 10 12" fill="currentColor" aria-hidden="true"><path d="M0 0l10 6-10 6z"/></svg></span>YouTube</span>
+          </div>
+          <div class="card__body">
+            <span class="tag">Video · In-house production</span>
+            <h3 class="card__title">In-house acoustic lesson — David Levi</h3>
+            <p class="card__desc">An in-house lesson produced with David Levi, a highly successful Israeli guitarist online, teaching a unique old-school style on a B&amp;G acoustic guitar.</p>
+            <div class="card__foot"><span class="ext">Watch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          </div>
+        </a>
+
+        <a class="card reveal" href="https://www.instagram.com/p/CuhrFySP9YJ/" target="_blank" rel="noopener noreferrer" aria-label="Influencer highlight reel brand ad on Instagram (opens in a new tab)">
+          <div class="card__media">
+            <img src="assets/thumbs/ig-highlight.jpg" alt="Video thumbnail: a creator holding a sunburst B&amp;G guitar in a highlight-reel brand ad" width="640" height="360" loading="lazy" decoding="async">
+            <span class="play-badge"><span class="tri"><svg viewBox="0 0 10 12" fill="currentColor" aria-hidden="true"><path d="M0 0l10 6-10 6z"/></svg></span>Instagram</span>
+          </div>
+          <div class="card__body">
+            <span class="tag">Brand ad · Social</span>
+            <h3 class="card__title">Influencer highlight reel</h3>
+            <p class="card__desc">A brand ad compiling standout moments from creator content and partner channels featuring B&amp;G.</p>
+            <div class="card__foot"><span class="ext">Watch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          </div>
+        </a>
+
+        <a class="card reveal" data-delay="1" href="https://www.youtube.com/watch?v=4J9Yai8JXb8" target="_blank" rel="noopener noreferrer" aria-label="Earned review from a 586K-subscriber creator on YouTube (opens in a new tab)">
+          <div class="card__media">
+            <img src="assets/thumbs/yt-review.jpg" alt="Video thumbnail: a leading acoustic-guitar creator reviewing a B&amp;G instrument" width="1280" height="720" loading="lazy" decoding="async">
+            <span class="play-badge"><span class="tri"><svg viewBox="0 0 10 12" fill="currentColor" aria-hidden="true"><path d="M0 0l10 6-10 6z"/></svg></span>YouTube</span>
+          </div>
+          <div class="card__body">
+            <span class="tag">Earned media · Creator partnership</span>
+            <h3 class="card__title">Earned review — 586K-subscriber creator</h3>
+            <p class="card__desc">A review from a leading voice in the acoustic-guitar world (586K subscribers) — creator partnership and earned-media placement for the brand.</p>
+            <div class="card__foot"><span class="ext">Watch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CAPABILITIES ============================== -->
+  <section class="caps" id="capabilities" aria-labelledby="caps-title">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Capabilities</p>
+        <h2 class="section-title" id="caps-title">One person, the whole funnel.</h2>
+        <p class="lede">Evidenced by the work above — and built to travel across categories, B2B and B2C alike.</p>
+      </div>
+
+      <div class="caps__grid">
+        <div class="cap reveal"><span class="cap__num">01</span><div><div class="cap__name">Copywriting &amp; messaging</div><p class="cap__note">Positioning, product, landing-page, email, and social — the full narrative.</p></div></div>
+        <div class="cap reveal" data-delay="1"><span class="cap__num">02</span><div><div class="cap__name">Go-to-market &amp; product marketing</div><p class="cap__note">ICP, positioning, and launch plans that align product, sales, and story.</p></div></div>
+        <div class="cap reveal"><span class="cap__num">03</span><div><div class="cap__name">Creative direction &amp; video</div><p class="cap__note">Concept to cut — hero films and social edits, shot and written in-house.</p></div></div>
+        <div class="cap reveal" data-delay="1"><span class="cap__num">04</span><div><div class="cap__name">Landing pages &amp; CRO</div><p class="cap__note">Bespoke pages and flows — ~20% weekly traffic lift via CRO&nbsp;+&nbsp;SEO.</p></div></div>
+        <div class="cap reveal"><span class="cap__num">05</span><div><div class="cap__name">Paid + organic &amp; lifecycle</div><p class="cap__note">Meta paid, Mailchimp lifecycle, GA4 — a 250% ROI on the flagship launch.</p></div></div>
+        <div class="cap reveal" data-delay="1"><span class="cap__num">06</span><div><div class="cap__name">Influencer &amp; creator partnerships</div><p class="cap__note">A 20+ creator program — micro-influencers to millions of subscribers.</p></div></div>
+        <div class="cap reveal"><span class="cap__num">07</span><div><div class="cap__name">Cross-functional delivery</div><p class="cap__note">Shoulder-to-shoulder with product, design, dev, and sales — owned end to end.</p></div></div>
+      </div>
+
+      <!-- Toolkit / stack — quick-scan signal of tech fluency -->
+      <div class="toolkit reveal" aria-label="Toolkit and disciplines">
+        <div class="toolkit__row">
+          <span class="toolkit__label">Stack</span>
+          <span class="tk-chip">GA4</span>
+          <span class="tk-chip">Meta Business Suite</span>
+          <span class="tk-chip">HubSpot</span>
+          <span class="tk-chip">Mailchimp</span>
+          <span class="tk-chip">Metricool</span>
+          <span class="tk-chip">Hootsuite</span>
+          <span class="tk-chip">AI content tools</span>
+        </div>
+        <div class="toolkit__row">
+          <span class="toolkit__label">Disciplines</span>
+          <span class="tk-chip">Go-to-market</span>
+          <span class="tk-chip">Product marketing</span>
+          <span class="tk-chip">Lifecycle</span>
+          <span class="tk-chip">CRO</span>
+          <span class="tk-chip">SEO</span>
+          <span class="tk-chip">Paid acquisition</span>
+          <span class="tk-chip">ABM</span>
+          <span class="tk-chip">B2B &amp; B2C</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== ABOUT ============================== -->
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="about__wood" aria-hidden="true"></div>
+    <div class="container">
+      <div class="about__grid">
+        <div class="section-head reveal" style="margin-bottom:0">
+          <p class="eyebrow">About</p>
+          <h2 class="section-title" id="about-title">Campaigns that both perform and inspire.</h2>
+        </div>
+        <div class="about__body reveal" data-delay="1">
+          <!-- Optional portrait: drop a photo and uncomment.
+          <figure style="margin:0 0 1.6rem;border-radius:8px;overflow:hidden;border:1px solid var(--line)">
+            <img src="assets/portrait.jpg" alt="Portrait of Mike Ilan" width="900" height="600" loading="lazy">
+          </figure> -->
+          <p>
+            I'm a product-marketing creative with 3+ years across B2B and B2C, owning campaigns end to end in fast-moving, tech-driven teams. I've run go-to-market and lifecycle programs, scaled a 20-plus creator roster from micro-influencers to channels with millions of subscribers, and shipped content for social, newsletters, and product pages while optimizing the journeys that drive retention.
+          </p>
+          <p>
+            I work shoulder-to-shoulder with product, design, dev, and sales. With a foundation in <em>AI-powered content workflows</em> and <em>data-driven decision-making</em> — GA4, HubSpot, Meta Business Suite, Mailchimp — I build campaigns that both perform and inspire.
+          </p>
+          <ul class="about__chips">
+            <li><b>3+</b> yrs · B2B &amp; B2C</li>
+            <li>GTM · Lifecycle · CRO</li>
+            <li><b>20+</b> creator program</li>
+            <li>Northwestern — Social Media Mktg</li>
+          </ul>
+          <p class="about__sign">— Mike Ilan</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CONTACT ============================== -->
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="container contact__inner">
+      <p class="eyebrow eyebrow--center reveal">Contact</p>
+      <h2 class="contact__title reveal" id="contact-title" data-delay="1">Let's tell a story that <em>sells</em>.</h2>
+      <p class="contact__note reveal" data-delay="1">
+        Open to full-time roles across product marketing, content, creative direction, and campaign leadership — in tech, agencies, and premium consumer brands. If you're hiring someone to own the story end to end, I'd love to talk.
+      </p>
+
+      <!-- TODO: confirm this is the address you want public -->
+      <a class="contact__email reveal" data-delay="2" href="mailto:mikeilan207@gmail.com">mikeilan207@gmail.com</a>
+
+      <div class="contact__socials reveal" data-delay="2">
+        <a class="social" href="https://www.linkedin.com/in/mikeilan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21.4 8.65 22 11 22 14.1V21h-4v-6c0-1.43-.03-3.27-2-3.27-2 0-2.3 1.56-2.3 3.17V21h-4z"/></svg>
+          LinkedIn
+        </a>
+        <a class="social" href="assets/mike-ilan-resume.pdf" target="_blank" rel="noopener noreferrer" download="Mike-Ilan-Resume.pdf" aria-label="Download résumé (PDF)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Résumé
+        </a>
+        <!-- TODO (optional): add an Instagram profile button here once you have the handle -->
+      </div>
+
+      <p class="reveal" data-delay="3" style="color:var(--text-mute);font-size:0.82rem;letter-spacing:0.06em;margin-top:0.4rem">
+        Based in Tel Aviv · B2B &amp; B2C · Open to full-time roles
+      </p>
+    </div>
+  </section>
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <div class="footer__brand">
+        <img src="assets/favicon.svg" alt="" width="26" height="26" aria-hidden="true">
+        <span><b>Mike Ilan</b> — Marketing Creative</span>
+      </div>
+      <p class="footer__meta">Case study produced for B&amp;G Guitars. Product images and video stills © B&amp;G Guitars and the respective creators, shown here for portfolio purposes.</p>
+    </div>
+    <div class="footer__right">
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/mikeilan" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C21.4 8.65 22 11 22 14.1V21h-4v-6c0-1.43-.03-3.27-2-3.27-2 0-2.3 1.56-2.3 3.17V21h-4z"/></svg>
+        </a>
+        <a href="mailto:mikeilan207@gmail.com" aria-label="Email Mike" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="assets/mike-ilan-resume.pdf" target="_blank" rel="noopener noreferrer" download="Mike-Ilan-Resume.pdf" aria-label="Download résumé (PDF)" title="Résumé (PDF)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3v5h5M14 3l5 5v11a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <a class="footer__top" href="#top" aria-label="Back to top">
+        Back to top
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
