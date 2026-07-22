@@ -107,6 +107,7 @@ Search `index.html` for `TODO` — each is inline where it's used.
 ```
 mike-ilan-portfolio/
 ├── index.html          # all markup + copy
+├── accessibility.html  # accessibility statement (linked in the footer)
 ├── styles.css          # design system + components
 ├── main.js             # nav, mobile menu, scroll reveals, scroll-spy
 ├── netlify.toml         # zero-config deploy + caching/security headers

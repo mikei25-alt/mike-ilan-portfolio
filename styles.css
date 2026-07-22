@@ -630,6 +630,8 @@ em { font-style: italic; font-family: var(--serif); }
 .footer { border-top: 1px solid var(--line); padding-block: 3rem 2.5rem; }
 .footer__inner { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 1.8rem; }
 .footer__col { max-width: 46ch; }
+.footer__link { display: inline-block; margin-top: 1rem; font-size: 0.78rem; letter-spacing: 0.06em; color: var(--text-mute); text-underline-offset: 3px; transition: color 0.3s var(--ease); }
+.footer__link:hover { color: var(--brass-bright); text-decoration: underline; }
 .footer__brand { display: flex; align-items: center; gap: 0.7rem; }
 .footer__brand img { width: 26px; height: 26px; }
 .footer__brand span { font-size: 0.9rem; color: var(--text-soft); }

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility · Mike Ilan</title>
+<meta name="description" content="Accessibility statement for Mike Ilan's portfolio — built to WCAG 2.1 AA and Israeli Standard 5568, with a contact for reporting any accessibility barrier.">
+<meta name="theme-color" content="#0c0907">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/dm-serif-display.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jost-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* Scoped layout for the standalone legal page (reuses the site's tokens/fonts) */
+  .legal-nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.15rem var(--gutter); border-bottom: 1px solid var(--line-soft); }
+  .legal-main { padding-block: clamp(2.6rem, 7vh, 5rem) var(--section-y); }
+  .legal { max-width: 66ch; }
+  .legal h1 { font-size: clamp(2rem, 1.3rem + 3vw, 3.3rem); color: var(--text); margin: 1rem 0 1.6rem; }
+  .legal h2 { font-family: var(--sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brass); margin: 2.6rem 0 1rem; }
+  .legal p { color: var(--text-soft); line-height: 1.75; margin-bottom: 1.2rem; }
+  .legal strong { color: var(--text); font-weight: 600; }
+  .legal a { color: var(--brass-bright); text-decoration: underline; text-underline-offset: 3px; }
+  .legal ul.bullets { margin: 0 0 1.3rem; padding: 0; }
+  .legal ul.bullets li { color: var(--text-soft); line-height: 1.7; padding-left: 1.4rem; position: relative; margin-bottom: 0.55rem; }
+  .legal ul.bullets li::before { content: ""; position: absolute; left: 0; top: 0.62em; width: 6px; height: 6px; border-radius: 50%; background: var(--brass); }
+  .legal .updated { color: var(--text-mute); font-size: 0.85rem; margin-top: 2.6rem; }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="legal-nav">
+  <a class="brand" href="./" aria-label="Mike Ilan — home">
+    <img class="brand__mark" src="assets/favicon.svg" alt="" width="30" height="30" aria-hidden="true">
+    <span class="brand__name"><b>Mike Ilan</b> <span>· Marketing Creative</span></span>
+  </a>
+  <a class="btn btn--ghost" href="./" style="font-size:0.78rem; padding:0.7em 1.2em">Back to site</a>
+</header>
+
+<main id="main" class="legal-main">
+  <div class="container legal">
+    <p class="eyebrow">Accessibility</p>
+    <h1>Accessibility statement</h1>
+
+    <p>I want this site to be usable by as many people as possible, including visitors who rely on assistive technology. It is built with accessibility in mind and aims to conform to <strong>WCAG 2.1 Level AA</strong> and the Israeli standard <strong>IS 5568</strong>.</p>
+
+    <h2>What's in place</h2>
+    <ul class="bullets">
+      <li>Semantic HTML landmarks and a logical heading structure.</li>
+      <li>Descriptive alternative text on all meaningful images.</li>
+      <li>Full keyboard operation, with a visible focus indicator and a "skip to content" link.</li>
+      <li>Text colour contrast that meets AA (a ratio of 4.5:1 or better).</li>
+      <li>Respect for the "reduce motion" system setting, so animations are minimised for those who prefer it.</li>
+      <li>A responsive layout that works down to small mobile screens and supports text zoom.</li>
+    </ul>
+
+    <h2>Known limitations</h2>
+    <p>This portfolio links out to third-party platforms (YouTube, Instagram, and B&amp;G Guitars) whose content and accessibility are outside my control.</p>
+
+    <h2>Found a problem?</h2>
+    <p>If you run into any accessibility barrier on this site, please tell me and I'll do my best to fix it promptly.</p>
+    <ul class="bullets">
+      <li>Accessibility coordinator: <strong>Mike Ilan</strong></li>
+      <li>Email: <a href="mailto:mikeilan207@gmail.com">mikeilan207@gmail.com</a></li>
+    </ul>
+
+    <p class="updated">This statement applies to this portfolio site. Last updated: July 2026.<br>
+    <!-- TODO (optional): add a phone number here if you'd like a second contact method. --></p>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <div class="footer__brand">
+        <img src="assets/favicon.svg" alt="" width="26" height="26" aria-hidden="true">
+        <span><b>Mike Ilan</b> · Marketing Creative</span>
+      </div>
+    </div>
+    <a class="footer__top" href="./" aria-label="Back to the main site">
+      Back to site
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</footer>
+</body>
+</html>
